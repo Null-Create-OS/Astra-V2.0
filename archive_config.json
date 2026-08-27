@@ -1,0 +1,101 @@
+{
+    "output_dir": "archive_downloads",
+
+    "queries": [
+        "mediatype:texts AND language:eng AND subject:science",
+        "mediatype:texts AND language:eng AND subject:history",
+        "mediatype:texts AND language:eng AND subject:computer science",
+        "mediatype:texts AND language:eng AND subject:mathematics",
+        "mediatype:texts AND language:eng AND subject:physics",
+        "mediatype:texts AND language:eng AND subject:biology",
+        "mediatype:texts AND language:eng AND subject:programming",
+        "mediatype:texts AND language:eng AND subject:philosophy",
+        "mediatype:texts AND language:eng AND subject:literature",
+        "mediatype:texts AND language:eng AND subject:psychology"
+    ],
+
+    "max_results_per_query": 50,
+
+    "request_delay": 1.0,
+
+    "formats": {
+        "allowed": [
+            "text",
+            "txt",
+            "utf-8",
+            "text/plain",
+            "pdf",
+            "epub",
+            "djvu",
+            "html",
+            "xml"
+        ],
+
+        "preferred": [
+            "text",
+            "txt",
+            "utf-8",
+            "text/plain"
+        ],
+
+        "max_files_per_item": 2
+    },
+
+    "filtering": {
+        "minimum_title_length": 5,
+
+        "minimum_file_size": 10000,
+
+        "reject_if_contains": [
+            "robot",
+            "robots.txt",
+            "favicon",
+            "tracking",
+            "analytics",
+            "advertisement",
+            "advertising",
+            "spam",
+            "test file",
+            "placeholder",
+            "screenshot",
+            "thumbnail",
+            "podcast",
+            "rss",
+            "feed",
+            "metadata",
+            "dataset index"
+        ],
+
+        "reject_files_containing": [
+            "metadata",
+            "files.xml",
+            "scandata",
+            "djvu.xml",
+            "thumb",
+            "thumbnail",
+            "ocr_page",
+            "page_numbers",
+            "itemimage",
+            "header",
+            "footer"
+        ],
+
+        "prefer_if_contains": [
+            "book",
+            "textbook",
+            "novel",
+            "literature",
+            "history",
+            "science",
+            "mathematics",
+            "physics",
+            "biology",
+            "computer",
+            "programming",
+            "philosophy",
+            "psychology",
+            "education",
+            "language"
+        ]
+    }
+}

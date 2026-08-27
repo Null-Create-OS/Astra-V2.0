@@ -1,0 +1,4 @@
+tokenizers
+tensorflow
+numpy
+requests>=2.31.0
